@@ -1,6 +1,6 @@
 /* General body styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: linear-gradient(135deg, #8e44ad, #3498db);
   color: #ffffff;
   margin: 0;
@@ -10,74 +10,85 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  text-align: center;
 }
 
 /* Main container styling */
 .container {
-  text-align: center;
   background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
   width: 350px;
+  max-width: 90%;
 }
 
 /* Title styling */
 h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 30px;
   color: #f1c40f;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  font-weight: 700;
 }
 
 /* Controls buttons styling */
 .controls button {
-  margin: 5px;
-  padding: 10px 20px;
-  font-size: 14px;
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 16px;
   cursor: pointer;
   border: none;
   border-radius: 25px;
   background: linear-gradient(135deg, #16a085, #1abc9c);
   color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 .controls button:hover {
   background: linear-gradient(135deg, #1abc9c, #2ecc71);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 /* Exercise section */
 .exercise {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 #question {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 26px;
+  margin-bottom: 20px;
   color: #ecf0f1;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
 /* Answer input field */
 #answer {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
+  width: 85%;
+  padding: 12px;
+  margin: 15px 0;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7;
+  transition: all 0.2s ease;
+}
+
+#answer:focus {
+  outline: none;
+  border-color: #1abc9c;
+  background-color: #fff;
 }
 
 /* Submit button */
 button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 12px 25px;
+  font-size: 18px;
   border: none;
   border-radius: 25px;
   background: linear-gradient(135deg, #e74c3c, #c0392b);
@@ -85,18 +96,19 @@ button {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 button:hover {
   background: linear-gradient(135deg, #c0392b, #e74c3c);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 /* Result feedback */
 #result {
-  margin-top: 20px;
+  margin-top: 30px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #result.green {
@@ -111,7 +123,7 @@ button:hover {
 @media (max-width: 400px) {
   .container {
     width: 90%;
-    padding: 20px;
+    padding: 25px;
   }
 
   #answer {
