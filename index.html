@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números en Letras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Números y Letras</h1>
+    <div class="controls">
+      <button onclick="setMode('numbersToWords')">Números a Letras</button>
+      <button onclick="setMode('wordsToNumbers')">Letras a Números</button>
+      <button onclick="setMode('mixed')">Ejercicio Mixto</button>
+    </div>
+    <div class="exercise">
+      <p id="question"></p>
+      <input type="text" id="answer" placeholder="Tu respuesta">
+      <button onclick="checkAnswer()">Verificar</button>
+    </div>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
